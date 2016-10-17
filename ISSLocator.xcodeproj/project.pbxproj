@@ -14,6 +14,7 @@
 		7AF730AA1DB55CDA008132C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF730A91DB55CDA008132C4 /* Assets.xcassets */; };
 		7AF730AD1DB55CDA008132C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF730AB1DB55CDA008132C4 /* LaunchScreen.storyboard */; };
 		7AF730B81DB55CDA008132C4 /* ISSLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF730B71DB55CDA008132C4 /* ISSLocatorTests.swift */; };
+		8CB511309F067B9D91855504 /* Pods_ISSLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672947C808406D6095E69131 /* Pods_ISSLocator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		455E8095974B852D7150CC9D /* Pods-ISSLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSLocator.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSLocator/Pods-ISSLocator.release.xcconfig"; sourceTree = "<group>"; };
+		55D4B73F76F03F330A5FC785 /* Pods-ISSLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSLocator/Pods-ISSLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		672947C808406D6095E69131 /* Pods_ISSLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF7309D1DB55CDA008132C4 /* ISSLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF730A01DB55CDA008132C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AF730A21DB55CDA008132C4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB511309F067B9D91855504 /* Pods_ISSLocator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 				7AF7309F1DB55CDA008132C4 /* ISSLocator */,
 				7AF730B61DB55CDA008132C4 /* ISSLocatorTests */,
 				7AF7309E1DB55CDA008132C4 /* Products */,
+				D4B09907D3AD0CCE259FD6EF /* Pods */,
+				DA8C9E39B380997CF72FC39B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,23 @@
 			path = ISSLocatorTests;
 			sourceTree = "<group>";
 		};
+		D4B09907D3AD0CCE259FD6EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55D4B73F76F03F330A5FC785 /* Pods-ISSLocator.debug.xcconfig */,
+				455E8095974B852D7150CC9D /* Pods-ISSLocator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA8C9E39B380997CF72FC39B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				672947C808406D6095E69131 /* Pods_ISSLocator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AF730BC1DB55CDA008132C4 /* Build configuration list for PBXNativeTarget "ISSLocator" */;
 			buildPhases = (
+				0038E8CD06B294C86D6E7996 /* [CP] Check Pods Manifest.lock */,
 				7AF730991DB55CDA008132C4 /* Sources */,
 				7AF7309A1DB55CDA008132C4 /* Frameworks */,
 				7AF7309B1DB55CDA008132C4 /* Resources */,
+				CFB8FD7BF9EAD6DA6E51C9DC /* [CP] Embed Pods Frameworks */,
+				2843C622E6EA730ABD971F99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,7 @@
 				TargetAttributes = {
 					7AF7309C1DB55CDA008132C4 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PND8ZPJHLJ;
 						ProvisioningStyle = Automatic;
 					};
 					7AF730B21DB55CDA008132C4 = {
@@ -196,6 +224,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0038E8CD06B294C86D6E7996 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2843C622E6EA730ABD971F99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSLocator/Pods-ISSLocator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB8FD7BF9EAD6DA6E51C9DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISSLocator/Pods-ISSLocator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AF730991DB55CDA008132C4 /* Sources */ = {
@@ -341,8 +417,10 @@
 		};
 		7AF730BD1DB55CDA008132C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D4B73F76F03F330A5FC785 /* Pods-ISSLocator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PND8ZPJHLJ;
 				INFOPLIST_FILE = ISSLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coreyTheDev.ISSLocator;
@@ -353,8 +431,10 @@
 		};
 		7AF730BE1DB55CDA008132C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455E8095974B852D7150CC9D /* Pods-ISSLocator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PND8ZPJHLJ;
 				INFOPLIST_FILE = ISSLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coreyTheDev.ISSLocator;
@@ -410,6 +490,7 @@
 				7AF730BE1DB55CDA008132C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AF730BF1DB55CDA008132C4 /* Build configuration list for PBXNativeTarget "ISSLocatorTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +499,7 @@
 				7AF730C11DB55CDA008132C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
