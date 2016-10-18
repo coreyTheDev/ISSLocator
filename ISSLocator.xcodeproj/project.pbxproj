@@ -202,7 +202,6 @@
 				TargetAttributes = {
 					7AF7309C1DB55CDA008132C4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PND8ZPJHLJ;
 						ProvisioningStyle = Automatic;
 					};
 					7AF730B21DB55CDA008132C4 = {
@@ -452,7 +451,7 @@
 			baseConfigurationReference = 55D4B73F76F03F330A5FC785 /* Pods-ISSLocator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PND8ZPJHLJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ISSLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coreyTheDev.ISSLocator;
@@ -467,7 +466,7 @@
 			baseConfigurationReference = 455E8095974B852D7150CC9D /* Pods-ISSLocator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PND8ZPJHLJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ISSLocator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coreyTheDev.ISSLocator;
