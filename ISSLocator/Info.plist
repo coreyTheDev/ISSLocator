@@ -4,14 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>digital-7 (italic).ttf</string>
-		<string>digital-7 (mono italic).ttf</string>
-		<string>digital-7 (mono).ttf</string>
-		<string>digital-7.ttf</string>
-		<string>ARCADECLASSIC.TTF</string>
-	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -35,6 +27,14 @@
 	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>ISSLocator would like to use your location while the app is running</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>digital-7 (italic).ttf</string>
+		<string>digital-7 (mono italic).ttf</string>
+		<string>digital-7 (mono).ttf</string>
+		<string>digital-7.ttf</string>
+		<string>ARCADECLASSIC.TTF</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -20,7 +20,9 @@ import SwiftyJSON
  - Send the user a push notification when the ISS is overhead - 30 min
  
  */
-class FirstViewController: UIViewController, CLLocationManagerDelegate {
+class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
     
     var locationManager:CLLocationManager?
     var usersCurrentLocation:CLLocationCoordinate2D?
@@ -39,6 +41,8 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
         locationManager?.distanceFilter = 200
         locationManager?.delegate = self
         locationManager?.startUpdatingLocation()
+        
+        self.tableView.register(UINib(nibName:"ISSLocationTableViewCell", bundle:Bundle.main), forCellReuseIdentifier: "main")
     }
     
     //MARK: CLLocationManagerDelegate
@@ -74,6 +78,23 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
             
             
         }
+    }
+    
+    //MARK: UITableView Delegate and Datasource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "main")!
+    }
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return self.view.frame.size.height + 10
     }
 }
 
