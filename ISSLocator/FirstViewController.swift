@@ -96,6 +96,9 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableV
                     
                     locationCell.visibilityLabel.text = "\((dateComponents.day)!)d \((dateComponents.hour)!)h \((dateComponents.minute)!)m \((dateComponents.second)!)s"
                     
+                    locationCell.visibilityLabel.isHidden = false
+                    locationCell.activityIndicator.stopAnimating()
+                    locationCell.activityIndicator.isHidden = true
                     let timeIntervalUntilPass = firstPassDate.timeIntervalSince(currentDate)
                     
                     

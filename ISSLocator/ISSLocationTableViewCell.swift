@@ -10,6 +10,7 @@ import UIKit
 
 class ISSLocationTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var noButton: UIButton!
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var visibilityLabel: UILabel!

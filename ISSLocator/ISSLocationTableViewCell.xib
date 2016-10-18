@@ -53,7 +53,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOg-EZ-cIM">
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOg-EZ-cIM">
                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -83,12 +83,16 @@
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-5m-nAn">
+                        <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </activityIndicatorView>
                 </subviews>
                 <color key="backgroundColor" red="0.17254901960784313" green="0.098039215686274508" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="OEf-Im-Kkb" firstAttribute="leading" secondItem="Eg6-Sx-uJc" secondAttribute="leading" id="4y1-aT-4Zx"/>
                     <constraint firstItem="EmT-HH-Jkq" firstAttribute="centerY" secondItem="OEf-Im-Kkb" secondAttribute="centerY" constant="1" id="531-W6-e2J"/>
                     <constraint firstItem="f31-GA-luz" firstAttribute="leading" secondItem="W1n-qL-uLU" secondAttribute="leading" constant="10" id="8lI-xf-tQN"/>
+                    <constraint firstItem="dAJ-5m-nAn" firstAttribute="top" secondItem="gYg-ks-3D4" secondAttribute="bottom" constant="2" id="C3O-Ww-xCh"/>
                     <constraint firstAttribute="trailing" secondItem="gYg-ks-3D4" secondAttribute="trailing" constant="20" id="Cpx-26-JBx"/>
                     <constraint firstItem="TRd-dc-7gI" firstAttribute="leading" secondItem="Eg6-Sx-uJc" secondAttribute="trailing" constant="8" id="Dcd-Wj-udk"/>
                     <constraint firstItem="OEf-Im-Kkb" firstAttribute="top" secondItem="Eg6-Sx-uJc" secondAttribute="bottom" id="FYE-R9-6dc"/>
@@ -102,6 +106,7 @@
                     <constraint firstItem="gYg-ks-3D4" firstAttribute="top" secondItem="OEf-Im-Kkb" secondAttribute="bottom" constant="32" id="jCs-za-3X3"/>
                     <constraint firstItem="C7t-35-vbs" firstAttribute="centerY" secondItem="f31-GA-luz" secondAttribute="centerY" id="kvd-0Q-fKC"/>
                     <constraint firstItem="W1n-qL-uLU" firstAttribute="leading" secondItem="20g-WD-fIL" secondAttribute="leading" id="lVM-pn-u6T"/>
+                    <constraint firstItem="dAJ-5m-nAn" firstAttribute="leading" secondItem="gYg-ks-3D4" secondAttribute="leading" id="o1A-fo-iB2"/>
                     <constraint firstItem="TRd-dc-7gI" firstAttribute="centerY" secondItem="Eg6-Sx-uJc" secondAttribute="centerY" constant="1" id="pxA-Wq-KMK"/>
                     <constraint firstAttribute="trailing" secondItem="W1n-qL-uLU" secondAttribute="trailing" constant="20" id="rN8-1J-Dc5"/>
                     <constraint firstItem="20g-WD-fIL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="89" id="s0T-Dj-f05"/>
@@ -111,6 +116,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="activityIndicator" destination="dAJ-5m-nAn" id="GPa-bA-S4j"/>
                 <outlet property="latitudeLabel" destination="TRd-dc-7gI" id="SLb-uW-82C"/>
                 <outlet property="longitudeLabel" destination="EmT-HH-Jkq" id="HSf-fN-PPI"/>
                 <outlet property="noButton" destination="C7t-35-vbs" id="6hs-cz-k9K"/>
