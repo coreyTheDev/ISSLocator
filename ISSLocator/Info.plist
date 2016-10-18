@@ -25,7 +25,7 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>ISSLocator would like to use your location while the app is running</string>
 	<key>UIAppFonts</key>
 	<array>

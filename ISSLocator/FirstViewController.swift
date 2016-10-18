@@ -36,7 +36,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableV
         locationManager = CLLocationManager()
         receivedLocation = false
         if CLLocationManager.authorizationStatus() == .notDetermined{
-            locationManager?.requestAlwaysAuthorization()
+            locationManager?.requestWhenInUseAuthorization()
         }
         
         
