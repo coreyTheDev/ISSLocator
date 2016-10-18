@@ -43,39 +43,27 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3H 4M 10S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRd-dc-7gI">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRd-dc-7gI">
                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3H 4M 10S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmT-HH-Jkq">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmT-HH-Jkq">
                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3H 4M 10S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOg-EZ-cIM">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOg-EZ-cIM">
                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1n-qL-uLU">
-                        <attributedString key="attributedText">
-                            <fragment content="NOTIFICATION  ON  VISIBILITY ">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="17" name="ArcadeClassic"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="?">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="17" name="Digital-7"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU WILL BE NOTIFIED AT THE ONSET OF ISS VISIBILITY" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1n-qL-uLU">
+                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f31-GA-luz">
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f31-GA-luz">
                         <constraints>
                             <constraint firstAttribute="height" constant="36" id="NoS-pG-E8d"/>
                             <constraint firstAttribute="width" constant="72" id="mNB-Ln-AYl"/>
@@ -85,7 +73,7 @@
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7t-35-vbs">
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7t-35-vbs">
                         <constraints>
                             <constraint firstAttribute="width" constant="72" id="Ke8-MB-syw"/>
                             <constraint firstAttribute="height" constant="36" id="O5x-E6-LU8"/>
@@ -101,7 +89,6 @@
                     <constraint firstItem="OEf-Im-Kkb" firstAttribute="leading" secondItem="Eg6-Sx-uJc" secondAttribute="leading" id="4y1-aT-4Zx"/>
                     <constraint firstItem="EmT-HH-Jkq" firstAttribute="centerY" secondItem="OEf-Im-Kkb" secondAttribute="centerY" constant="1" id="531-W6-e2J"/>
                     <constraint firstItem="f31-GA-luz" firstAttribute="leading" secondItem="W1n-qL-uLU" secondAttribute="leading" constant="10" id="8lI-xf-tQN"/>
-                    <constraint firstItem="f31-GA-luz" firstAttribute="top" secondItem="W1n-qL-uLU" secondAttribute="bottom" constant="8" id="AkB-Bu-xXa"/>
                     <constraint firstAttribute="trailing" secondItem="gYg-ks-3D4" secondAttribute="trailing" constant="20" id="Cpx-26-JBx"/>
                     <constraint firstItem="TRd-dc-7gI" firstAttribute="leading" secondItem="Eg6-Sx-uJc" secondAttribute="trailing" constant="8" id="Dcd-Wj-udk"/>
                     <constraint firstItem="OEf-Im-Kkb" firstAttribute="top" secondItem="Eg6-Sx-uJc" secondAttribute="bottom" id="FYE-R9-6dc"/>
@@ -116,11 +103,20 @@
                     <constraint firstItem="C7t-35-vbs" firstAttribute="centerY" secondItem="f31-GA-luz" secondAttribute="centerY" id="kvd-0Q-fKC"/>
                     <constraint firstItem="W1n-qL-uLU" firstAttribute="leading" secondItem="20g-WD-fIL" secondAttribute="leading" id="lVM-pn-u6T"/>
                     <constraint firstItem="TRd-dc-7gI" firstAttribute="centerY" secondItem="Eg6-Sx-uJc" secondAttribute="centerY" constant="1" id="pxA-Wq-KMK"/>
+                    <constraint firstAttribute="trailing" secondItem="W1n-qL-uLU" secondAttribute="trailing" constant="20" id="rN8-1J-Dc5"/>
                     <constraint firstItem="20g-WD-fIL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="89" id="s0T-Dj-f05"/>
                     <constraint firstItem="ZOg-EZ-cIM" firstAttribute="leading" secondItem="gYg-ks-3D4" secondAttribute="leading" id="uES-1s-Qhu"/>
+                    <constraint firstItem="f31-GA-luz" firstAttribute="top" secondItem="W1n-qL-uLU" secondAttribute="bottom" constant="15.5" id="xH2-SG-h8L"/>
                     <constraint firstItem="20g-WD-fIL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zgg-q9-7nV"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="latitudeLabel" destination="TRd-dc-7gI" id="SLb-uW-82C"/>
+                <outlet property="longitudeLabel" destination="EmT-HH-Jkq" id="HSf-fN-PPI"/>
+                <outlet property="noButton" destination="C7t-35-vbs" id="6hs-cz-k9K"/>
+                <outlet property="visibilityLabel" destination="ZOg-EZ-cIM" id="bRg-UK-pfN"/>
+                <outlet property="yesButton" destination="f31-GA-luz" id="1CD-yn-AFD"/>
+            </connections>
             <point key="canvasLocation" x="-241.5" y="265.5"/>
         </tableViewCell>
     </objects>

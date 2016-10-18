@@ -23,6 +23,7 @@ import SwiftyJSON
 class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    let USER_DEFAULTS_NOTIFICATION = "USER_DEFAULTS_NOTIFICATION"
     
     var locationManager:CLLocationManager?
     var usersCurrentLocation:CLLocationCoordinate2D?
@@ -50,6 +51,10 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableV
         if let firstLocation = locations.first {
             usersLocation = firstLocation
             print("the users location is lat: \(usersLocation?.coordinate.latitude) and long: \(usersLocation?.coordinate.longitude)")
+            let locationCell = self.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! ISSLocationTableViewCell
+            locationCell.latitudeLabel.text = "\((usersLocation?.coordinate.latitude)!)"
+            locationCell.longitudeLabel.text = "\((usersLocation?.coordinate.longitude)!)"
+            locationManager?.stopUpdatingLocation()
             self.getISSETA()
         }
     }
@@ -63,9 +68,34 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableV
         Alamofire.request(issPassURL).responseJSON { response in
             print("call finished")
             
-//            let jsonData = JSON(response.result.value!)
-//            
-//            print("JSON: \(jsonData)")
+            let jsonData = JSON(response.result.value)
+            let message = jsonData["message"].string
+            if message == "success" {
+                let responseJSONArray = jsonData["response"]
+                
+                for (_, subJSON): (String, JSON) in responseJSONArray {
+                    let firstTimeStamp = subJSON["risetime"].doubleValue
+                    let firstPassDate = Date(timeIntervalSince1970: firstTimeStamp)
+                    let currentDate = Date(timeIntervalSinceNow: 0)
+                    //determine difference between now and firstPassDate
+                    var utcCalendar = NSCalendar.current
+                    utcCalendar.timeZone = TimeZone(identifier: "UTC")!
+                    
+                    
+                    let componentSet:Set<Calendar.Component> = [.day, .hour, .minute, .year, .second]
+                    
+                    let dateComponents = utcCalendar.dateComponents(componentSet, from: currentDate, to: firstPassDate)
+                    let locationCell = self.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! ISSLocationTableViewCell
+                    
+                    print ("time til first pass: \((dateComponents.day)!) d \((dateComponents.hour)!) h, \((dateComponents.minute)!) m  \((dateComponents.second)!) s")
+                    
+                    locationCell.visibilityLabel.text = "\((dateComponents.day)!)d \((dateComponents.hour)!)h \((dateComponents.minute)!)m \((dateComponents.second)!)s"
+                    
+                }
+            }
+            
+//
+            
             //loop through each element in JSON and add to an array
 //            var arrayForAdId = self.adEntryDictionary[searchBarText]
 //            if arrayForAdId == nil {
@@ -88,7 +118,26 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableV
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "main")!
+        let locationCell = tableView.dequeueReusableCell(withIdentifier: "main") as! ISSLocationTableViewCell
+        
+        //code to handle turning on and off local notifications. commented out for the moment. 
+//        var userDefaultNotificationValue = UserDefaults.standard.value(forKey: USER_DEFAULTS_NOTIFICATION) as? NSNumber
+//        if userDefaultNotificationValue == nil {
+//            UserDefaults.standard.setValue(NSNumber(value: false), forKey: USER_DEFAULTS_NOTIFICATION)
+//            userDefaultNotificationValue = NSNumber(value: false)
+//        }
+//        
+//        if (userDefaultNotificationValue?.boolValue)! {
+//            
+//            locationCell.yesButton.layer.borderWidth = 3.0
+//            locationCell.noButton.layer.borderWidth = 0.0
+//        }else {
+//            
+//            locationCell.yesButton.layer.borderWidth = 0.0
+//            locationCell.noButton.layer.borderWidth = 3.0
+//        }
+        
+        return locationCell
     }
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
         return false
