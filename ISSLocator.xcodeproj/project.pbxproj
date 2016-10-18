@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A72D6651DB59FC80040D082 /* ARCADECLASSIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7A72D6641DB59FC80040D082 /* ARCADECLASSIC.TTF */; };
+		7A72D66B1DB59FE40040D082 /* digital-7 (italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A72D6671DB59FE40040D082 /* digital-7 (italic).ttf */; };
+		7A72D66C1DB59FE40040D082 /* digital-7 (mono italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A72D6681DB59FE40040D082 /* digital-7 (mono italic).ttf */; };
+		7A72D66D1DB59FE40040D082 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A72D6691DB59FE40040D082 /* digital-7 (mono).ttf */; };
+		7A72D66E1DB59FE40040D082 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A72D66A1DB59FE40040D082 /* digital-7.ttf */; };
+		7A923BCE1DB5A1A8006715E1 /* ISSLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A923BCC1DB5A1A8006715E1 /* ISSLocationTableViewCell.swift */; };
+		7A923BCF1DB5A1A8006715E1 /* ISSLocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A923BCD1DB5A1A8006715E1 /* ISSLocationTableViewCell.xib */; };
 		7AF730A11DB55CDA008132C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF730A01DB55CDA008132C4 /* AppDelegate.swift */; };
 		7AF730A31DB55CDA008132C4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF730A21DB55CDA008132C4 /* FirstViewController.swift */; };
-		7AF730A51DB55CDA008132C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF730A41DB55CDA008132C4 /* SecondViewController.swift */; };
 		7AF730A81DB55CDA008132C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF730A61DB55CDA008132C4 /* Main.storyboard */; };
 		7AF730AA1DB55CDA008132C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF730A91DB55CDA008132C4 /* Assets.xcassets */; };
 		7AF730AD1DB55CDA008132C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF730AB1DB55CDA008132C4 /* LaunchScreen.storyboard */; };
@@ -31,10 +37,16 @@
 		455E8095974B852D7150CC9D /* Pods-ISSLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSLocator.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISSLocator/Pods-ISSLocator.release.xcconfig"; sourceTree = "<group>"; };
 		55D4B73F76F03F330A5FC785 /* Pods-ISSLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISSLocator/Pods-ISSLocator.debug.xcconfig"; sourceTree = "<group>"; };
 		672947C808406D6095E69131 /* Pods_ISSLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A72D6641DB59FC80040D082 /* ARCADECLASSIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = ARCADECLASSIC.TTF; path = Fonts/arcadeclassic/ARCADECLASSIC.TTF; sourceTree = SOURCE_ROOT; };
+		7A72D6671DB59FE40040D082 /* digital-7 (italic).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7 (italic).ttf"; path = "Fonts/digital-7/digital-7 (italic).ttf"; sourceTree = SOURCE_ROOT; };
+		7A72D6681DB59FE40040D082 /* digital-7 (mono italic).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7 (mono italic).ttf"; path = "Fonts/digital-7/digital-7 (mono italic).ttf"; sourceTree = SOURCE_ROOT; };
+		7A72D6691DB59FE40040D082 /* digital-7 (mono).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7 (mono).ttf"; path = "Fonts/digital-7/digital-7 (mono).ttf"; sourceTree = SOURCE_ROOT; };
+		7A72D66A1DB59FE40040D082 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "Fonts/digital-7/digital-7.ttf"; sourceTree = SOURCE_ROOT; };
+		7A923BCC1DB5A1A8006715E1 /* ISSLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISSLocationTableViewCell.swift; sourceTree = "<group>"; };
+		7A923BCD1DB5A1A8006715E1 /* ISSLocationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISSLocationTableViewCell.xib; sourceTree = "<group>"; };
 		7AF7309D1DB55CDA008132C4 /* ISSLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF730A01DB55CDA008132C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AF730A21DB55CDA008132C4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7AF730A41DB55CDA008132C4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7AF730A71DB55CDA008132C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AF730A91DB55CDA008132C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AF730AC1DB55CDA008132C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +75,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A72D6661DB59FCD0040D082 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7A72D6671DB59FE40040D082 /* digital-7 (italic).ttf */,
+				7A72D6681DB59FE40040D082 /* digital-7 (mono italic).ttf */,
+				7A72D6691DB59FE40040D082 /* digital-7 (mono).ttf */,
+				7A72D66A1DB59FE40040D082 /* digital-7.ttf */,
+				7A72D6641DB59FC80040D082 /* ARCADECLASSIC.TTF */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		7AF730941DB55CD9008132C4 = {
 			isa = PBXGroup;
 			children = (
@@ -88,11 +112,13 @@
 			children = (
 				7AF730A01DB55CDA008132C4 /* AppDelegate.swift */,
 				7AF730A21DB55CDA008132C4 /* FirstViewController.swift */,
-				7AF730A41DB55CDA008132C4 /* SecondViewController.swift */,
 				7AF730A61DB55CDA008132C4 /* Main.storyboard */,
+				7A923BCC1DB5A1A8006715E1 /* ISSLocationTableViewCell.swift */,
+				7A923BCD1DB5A1A8006715E1 /* ISSLocationTableViewCell.xib */,
 				7AF730A91DB55CDA008132C4 /* Assets.xcassets */,
 				7AF730AB1DB55CDA008132C4 /* LaunchScreen.storyboard */,
 				7AF730AE1DB55CDA008132C4 /* Info.plist */,
+				7A72D6661DB59FCD0040D082 /* Fonts */,
 			);
 			path = ISSLocator;
 			sourceTree = "<group>";
@@ -210,9 +236,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A72D66D1DB59FE40040D082 /* digital-7 (mono).ttf in Resources */,
+				7A923BCF1DB5A1A8006715E1 /* ISSLocationTableViewCell.xib in Resources */,
 				7AF730AD1DB55CDA008132C4 /* LaunchScreen.storyboard in Resources */,
+				7A72D66C1DB59FE40040D082 /* digital-7 (mono italic).ttf in Resources */,
+				7A72D66E1DB59FE40040D082 /* digital-7.ttf in Resources */,
+				7A72D66B1DB59FE40040D082 /* digital-7 (italic).ttf in Resources */,
 				7AF730AA1DB55CDA008132C4 /* Assets.xcassets in Resources */,
 				7AF730A81DB55CDA008132C4 /* Main.storyboard in Resources */,
+				7A72D6651DB59FC80040D082 /* ARCADECLASSIC.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AF730A51DB55CDA008132C4 /* SecondViewController.swift in Sources */,
 				7AF730A11DB55CDA008132C4 /* AppDelegate.swift in Sources */,
+				7A923BCE1DB5A1A8006715E1 /* ISSLocationTableViewCell.swift in Sources */,
 				7AF730A31DB55CDA008132C4 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

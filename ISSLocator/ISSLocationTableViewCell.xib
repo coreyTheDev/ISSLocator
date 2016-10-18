@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ARCADECLASSIC.TTF">
+            <string>ArcadeClassic</string>
+        </array>
+        <array key="digital-7.ttf">
+            <string>Digital-7</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="613" id="KGk-i7-Jjw" customClass="ISSLocationTableViewCell" customModule="ISSLocator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="612"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR LOCATION:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20g-WD-fIL">
+                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LATITUDE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg6-Sx-uJc">
+                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LONGITUDE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-Im-Kkb">
+                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPROXIMITE  TIME  UNTIL  ISS  VISIBILITY:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYg-ks-3D4">
+                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3H 4M 10S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRd-dc-7gI">
+                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3H 4M 10S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmT-HH-Jkq">
+                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3H 4M 10S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOg-EZ-cIM">
+                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1n-qL-uLU">
+                        <attributedString key="attributedText">
+                            <fragment content="NOTIFICATION  ON  VISIBILITY ">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="17" name="ArcadeClassic"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="?">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="17" name="Digital-7"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f31-GA-luz">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="NoS-pG-E8d"/>
+                            <constraint firstAttribute="width" constant="72" id="mNB-Ln-AYl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                        <state key="normal" title="YES">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7t-35-vbs">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="Ke8-MB-syw"/>
+                            <constraint firstAttribute="height" constant="36" id="O5x-E6-LU8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                        <state key="normal" title="NO">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.17254901960784313" green="0.098039215686274508" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="OEf-Im-Kkb" firstAttribute="leading" secondItem="Eg6-Sx-uJc" secondAttribute="leading" id="4y1-aT-4Zx"/>
+                    <constraint firstItem="EmT-HH-Jkq" firstAttribute="centerY" secondItem="OEf-Im-Kkb" secondAttribute="centerY" constant="1" id="531-W6-e2J"/>
+                    <constraint firstItem="f31-GA-luz" firstAttribute="leading" secondItem="W1n-qL-uLU" secondAttribute="leading" constant="10" id="8lI-xf-tQN"/>
+                    <constraint firstItem="f31-GA-luz" firstAttribute="top" secondItem="W1n-qL-uLU" secondAttribute="bottom" constant="8" id="AkB-Bu-xXa"/>
+                    <constraint firstAttribute="trailing" secondItem="gYg-ks-3D4" secondAttribute="trailing" constant="20" id="Cpx-26-JBx"/>
+                    <constraint firstItem="TRd-dc-7gI" firstAttribute="leading" secondItem="Eg6-Sx-uJc" secondAttribute="trailing" constant="8" id="Dcd-Wj-udk"/>
+                    <constraint firstItem="OEf-Im-Kkb" firstAttribute="top" secondItem="Eg6-Sx-uJc" secondAttribute="bottom" id="FYE-R9-6dc"/>
+                    <constraint firstItem="EmT-HH-Jkq" firstAttribute="leading" secondItem="OEf-Im-Kkb" secondAttribute="trailing" constant="8" id="GeI-Qj-kaY"/>
+                    <constraint firstItem="C7t-35-vbs" firstAttribute="leading" secondItem="f31-GA-luz" secondAttribute="trailing" constant="21" id="GpL-iT-jBP"/>
+                    <constraint firstItem="Eg6-Sx-uJc" firstAttribute="leading" secondItem="20g-WD-fIL" secondAttribute="leading" id="Qxy-QS-5Y8"/>
+                    <constraint firstItem="gYg-ks-3D4" firstAttribute="leading" secondItem="20g-WD-fIL" secondAttribute="leading" id="Scd-Sn-7zh"/>
+                    <constraint firstItem="Eg6-Sx-uJc" firstAttribute="top" secondItem="20g-WD-fIL" secondAttribute="bottom" constant="4" id="StR-eQ-p0l"/>
+                    <constraint firstItem="W1n-qL-uLU" firstAttribute="top" secondItem="ZOg-EZ-cIM" secondAttribute="bottom" constant="32" id="U4a-4d-tZb"/>
+                    <constraint firstItem="ZOg-EZ-cIM" firstAttribute="top" secondItem="gYg-ks-3D4" secondAttribute="bottom" constant="2" id="gps-Y2-hNw"/>
+                    <constraint firstItem="gYg-ks-3D4" firstAttribute="top" secondItem="OEf-Im-Kkb" secondAttribute="bottom" constant="32" id="jCs-za-3X3"/>
+                    <constraint firstItem="C7t-35-vbs" firstAttribute="centerY" secondItem="f31-GA-luz" secondAttribute="centerY" id="kvd-0Q-fKC"/>
+                    <constraint firstItem="W1n-qL-uLU" firstAttribute="leading" secondItem="20g-WD-fIL" secondAttribute="leading" id="lVM-pn-u6T"/>
+                    <constraint firstItem="TRd-dc-7gI" firstAttribute="centerY" secondItem="Eg6-Sx-uJc" secondAttribute="centerY" constant="1" id="pxA-Wq-KMK"/>
+                    <constraint firstItem="20g-WD-fIL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="89" id="s0T-Dj-f05"/>
+                    <constraint firstItem="ZOg-EZ-cIM" firstAttribute="leading" secondItem="gYg-ks-3D4" secondAttribute="leading" id="uES-1s-Qhu"/>
+                    <constraint firstItem="20g-WD-fIL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zgg-q9-7nV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-241.5" y="265.5"/>
+        </tableViewCell>
+    </objects>
+</document>
