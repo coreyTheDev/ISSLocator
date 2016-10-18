@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import Alamofire
 import SwiftyJSON
-
+import UserNotifications
 /*
  
  *Required Features*:
@@ -29,14 +29,16 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableV
     var usersCurrentLocation:CLLocationCoordinate2D?
     var usersLocation:CLLocation?
     
+    var receivedLocation:Bool?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         locationManager = CLLocationManager()
-        
+        receivedLocation = false
         if CLLocationManager.authorizationStatus() == .notDetermined{
             locationManager?.requestAlwaysAuthorization()
         }
+        
         
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         locationManager?.distanceFilter = 200
@@ -48,14 +50,17 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableV
     
     //MARK: CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let firstLocation = locations.first {
-            usersLocation = firstLocation
-            print("the users location is lat: \(usersLocation?.coordinate.latitude) and long: \(usersLocation?.coordinate.longitude)")
-            let locationCell = self.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! ISSLocationTableViewCell
-            locationCell.latitudeLabel.text = "\((usersLocation?.coordinate.latitude)!)"
-            locationCell.longitudeLabel.text = "\((usersLocation?.coordinate.longitude)!)"
-            locationManager?.stopUpdatingLocation()
-            self.getISSETA()
+        if receivedLocation == false {
+            if let firstLocation = locations.first {
+                receivedLocation = true
+                usersLocation = firstLocation
+                print("the users location is lat: \(usersLocation?.coordinate.latitude) and long: \(usersLocation?.coordinate.longitude)")
+                let locationCell = self.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! ISSLocationTableViewCell
+                locationCell.latitudeLabel.text = "\((usersLocation?.coordinate.latitude)!)"
+                locationCell.longitudeLabel.text = "\((usersLocation?.coordinate.longitude)!)"
+                locationManager?.stopUpdatingLocation()
+                self.getISSETA()
+            }
         }
     }
 
@@ -91,6 +96,35 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, UITableV
                     
                     locationCell.visibilityLabel.text = "\((dateComponents.day)!)d \((dateComponents.hour)!)h \((dateComponents.minute)!)m \((dateComponents.second)!)s"
                     
+                    let timeIntervalUntilPass = firstPassDate.timeIntervalSince(currentDate)
+                    
+                    
+                    
+                    UNUserNotificationCenter.current().requestAuthorization(
+                        options: [.alert,.sound,.badge],
+                        completionHandler: { (granted,error) in
+                            let content = UNMutableNotificationContent()
+                            content.title = "ISS Overhead!"
+                            content.subtitle = "Look up!"
+                            content.body = ""
+                            content.categoryIdentifier = "message"
+                            
+                            let trigger = UNTimeIntervalNotificationTrigger(
+                                timeInterval: timeIntervalUntilPass,
+                                repeats: false)
+                            
+                            let request = UNNotificationRequest(
+                                identifier: "notification.ISSOverhead",
+                                content: content,
+                                trigger: trigger
+                            )
+                            
+                            UNUserNotificationCenter.current().add(
+                                request, withCompletionHandler: nil)
+                        }
+                    )
+                    
+                    return
                 }
             }
             
